@@ -1,0 +1,6 @@
+<h3> Now you're reading to create your OWN unique pokemon!</h3>
+
+<%= simple_form_for Pokemon.new, url: { action: 'create' } do |f| %>
+  <%= f.input :name, required: true %>
+  <%= f.button :submit %>
+<% end %>
